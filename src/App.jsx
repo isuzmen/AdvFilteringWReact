@@ -5,9 +5,9 @@ import Recommended from './Recommended/Recommended';
 function App() {
   return (
     <>
-      <Navigation />;
-      <Products />
+      <Navigation />
       <Recommended />
+      <Products />
     </>
   );
 }
