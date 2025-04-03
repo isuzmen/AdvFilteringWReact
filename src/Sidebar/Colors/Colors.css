@@ -1,0 +1,11 @@
+.color-title {
+  margin-top: 2rem;
+}
+
+.all {
+  background: linear-gradient(blue, crimson);
+}
+
+.sidebar-label-container {
+  font-size: 15px;
+}
