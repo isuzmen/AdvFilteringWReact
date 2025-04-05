@@ -4,6 +4,7 @@ import Products from './Products/Products';
 import Recommended from './Recommended/Recommended';
 import Sidebar from './Sidebar/Sidebar';
 import products from './db/data.jsx';
+import Card from './components/Card.jsx';
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -63,10 +64,10 @@ function App() {
 
   return (
     <>
-      <Sidebar />
-      <Navigation />
-      <Recommended />
-      <Products />
+      <Sidebar handleChange={handleChange} />
+      <Navigation query={query} handleInputChange={handleInputChange} />
+      <Recommended handleClick={handleClick} />
+      <Products result={result} />
     </>
   );
 }
